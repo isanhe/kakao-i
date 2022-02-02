@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao i</title>
+    <!-- 파비콘 -->
+    <link  href="img/favicon.png" type="image" rel="shortcut icon">
+    <!-- swiper css, jqury연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="css/kakaomain.css" type="text/css">
+    <!-- jqury 라이브러리 연결 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 외부 js 파일 연결 -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="box">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo2.png" alt="로고">
+                    </a>
+                </div>
+                <!-- 내비게이션(2차원메뉴) -->
+                <nav>
+                    <ul>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">소개</a>
+                            <ul class="sub"></ul>
+                        </li><!--소개-->
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">서비스</a>
+                            <ul class="sub"></ul>
+                        </li><!--서비스-->
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#" >제품</a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">미니링크</a></li>
+                                <li><a href="#">미니헥사</a></li>
+                                <li><a href="#">헤이카카오</a></li>
+                                <li><a href="#">카카오미니</a></li>
+                                <li><a href="#">카카오홈</a></li>
+                            </ul>
+                        </li><!--제품-->
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">파트너</a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">카카오톡</a></li>
+                                <li><a href="#">자동차</a></li>
+                                <li><a href="#">내비게이션</a></li>
+                                <li><a href="#">스마트악세서리</a></li>
+                                <li><a href="#">디스플레이</a></li>
+                                <li><a href="#">스마트홈</a></li>
+                            </ul>
+                        </li><!--파트너-->
+                    </ul>
+                </nav>
+                <!-- Ai알고리즘윤리, 제휴확인 -->
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="#">AI 알고리즘 윤리</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                </div>
+            </div><!--box-->
+            <!-- 서브메뉴 배경은 .box의 형제객체로 코딩함. css에서는 부모나 부모의 형제를 제어하는 선택자가 없어서 제이쿼리로 제어해야 함 -->
+            <div class="sub_bg"></div>
+        </header>
+        <section class="s1">
+            <!-- box가 없는 이유는 풀스크린으로 보이게 하기 위해서이다. -->
+            <!-- 메인 비주얼의 이미지 영역(3개) -->
+            <div class="photo">
+                <ul>
+                    <li class="main1"></li>
+                    <li class="main2"></li>
+                    <li class="main3"></li>
+                </ul>
+                <!-- 수정때문에 주석처리 -->
+                <!-- <ul>
+                    <li><img src="img/main1.png" alt="미니링크"></li>
+                    <li><img src="img/main2.png" alt="미니헥사"></li>
+                    <li><img src="img/main3.png" alt="카카오미니"></li>
+                </ul> -->
+            </div>
+            <!-- 회면 왼쪽의 세로 막대 -->
+            <div class="bar">
+                <h3>Kakao business</h3>
+            </div>
+            <!-- 설명과 번호와 play, pause버튼 영역 -->
+            <div class="des_box">
+                <div class="des">
+                    <ul>
+                        <li>
+                            <h2>내 손 안의 스마트한 친구</h2>
+                            <h1>Mini Link</h1>
+                            <a href="#">미니링크 더 알아보기</a>
+                        </li>
+                        <li>
+                            <h2>더 작고 똑똑한 스마트 스피커</h2>
+                            <h1>Mini Hexa</h1>
+                            <a href="#">미니헥사 더 알아보기</a>
+                        </li>
+                        <li>
+                            <h2>언제 어디서든 쉽고 편하게</h2>
+                            <h1>kakao mini</h1>
+                            <a href="#">카카오미니 더 알아보기</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="number">
+                    <div class="num">
+                        <ul>
+                            <li><a href="#" class="active">01</a></li>
+                            <li><a href="#">02</a></li>
+                            <li><a href="#">03</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <hr>    <!--짧은 선-->
+                        <a href="#">
+                            <!-- <img src="img/arrow_icon.png" alt="화살표버튼"> -->
+                        </a>
+                    </div>
+                </div>    
+            </div>
+            <!-- scroll -->
+            <div class="scroll">
+                <p>SCROLL</p>
+                <div class="scroll_btn">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="box">
+                <div class="movie">
+                    <!-- 동영상 코드 -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0mpFRocdW8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                <div class="movie_img">
+                    <!-- 이미지 -->
+                    <a href="https://youtu.be/0mpFRocdW8c">
+                        <img src="img/youtube.png" alt="헤이카카오스몰톡동영상">
+                    </a>
+    
+                </div>
+                <div class="play_icon">
+                    <a href="https://youtu.be/0mpFRocdW8c">                    <img src="img/play_icon.png" alt="동영상 플레이 아이콘">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="s3">
+            <!-- box가 없는 이유는  pull 스크린 이기 때문 -->
+            <div class="area">
+                <div class="product1">
+                    <h1>
+                        <span>kakao I</span><br>
+                        BUSINESS
+                    </h1>
+                    <div class="product_title">
+                        <div class="product_des">
+                            <ul>
+                                <li class="d1">
+                                    <h3><span>01</span>kakao I</h3>
+                                    <p>새로운 내일과 일상의 변화를<br>가져오는 인공지능</p>
+                                    <a href="#"><img src="img/page_icon.png" alt="새페이지아이콘"></a>        
+                                </li>
+                                <li class="d2">
+                                    <h3><span>02</span>Hey kakao</h3>
+                                    <p>일상을 바꾸는 한 마디</p>
+                                    <a href="#"><img src="img/page_icon.png" alt="새페이지아이콘"></a>        
+                                </li>
+                                <li class="d3">
+                                    <h3><span>03</span>Mini link</h3>
+                                    <p>내 손안의 스마트한 친구</p>
+                                    <a href="#"><img src="img/page_icon.png" alt="새페이지아이콘"></a>        
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product_list">
+                            <ul>
+                                <li class="t1 active"><a href="#">kakao I</a></li>
+                                <li class="t2"><a href="#">Hey kakao</a></li>
+                                <li class="t3"><a href="#">Mini link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product2">
+                    <ul>
+                        <li class="img1"><img src="img/banner3_1.png" alt="카카오 아이"></li>
+                        <li class="img2"><img src="img/banner3_2.png" alt="헤이카카오"></li>
+                        <li class="img3"><img src="img/banner3_3.png" alt="미니링크"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="area">
+                <div class="new_bg">
+
+                </div>
+                <div class="new_des">
+                        <div class="new_title">
+                            <h1><span>kakao</span><br>Developer</h1>
+                            <hr>
+                            <br>
+                            <h3>kakao i의 개발진들을 소개합니다.</h3>
+                        </div>
+                        <a href="#">
+                            <img src="img/page_icon_b.png" alt="새페이지아이콘">
+                        </a>
+                </div>
+                <div class="new_list">
+                        <div class="new_list swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="new_img">
+                                    <img src="img/kakao_de1.png" alt="카카오개발자1">
+                                </div>
+                                <div class="de">
+                                    <p>개발 실장<br><span>Sudar</span>  김수달</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="new_img">
+                                    <img src="img/kakao_de2.png" alt="카카오개발자2">
+                                </div>
+                                <div class="de">
+                                    <p>개발 팀장<br><span>Bieber</span>  윤비버</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="new_img">
+                                    <img src="img/kakao_de3.png" alt="카카오개발자3">
+                                </div>
+                                <div class="de">
+                                    <p>개발 부장<br><span>bear</span>  고   웅</p>
+                                </div>  
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="new_img">
+                                    <img src="img/kakao_de4.png" alt="카카오개발자4">
+                                </div>
+                                <div class="de">
+                                    <p>주임<br><span>dogi</span>  이개동</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="new_img">
+                                    <img src="img/kakao_de5.png" alt="카카오개발자5">
+                                </div>
+                                <div class="de">
+                                    <p>사원<br><span>bunny</span>  지토깽</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="new_img">
+                                    <img src="img/kakao_de6.png" alt="카카오개발자6">
+                                </div>
+                                <div class="de">
+                                    <p>사원<br><span>duck</span>  박비약</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="box">
+                <div class="heykakao_img">
+                    <img src="img/banner5_bg.png" alt="heykakao 다양한 명령어">
+                </div>
+                <div class="heykakao_des">
+                    <p>다양한 명령어</p>
+                    <h1><span>헤이카카오,</span><br>부른 뒤 무엇을 말해야할지<br>모르겠다면?</h1>
+                    <h3>Things you can ask Heykakao<br><span>:</span> </h3>
+                    <a href="#">
+                    <h2>Hey kakao 명령어 더 보러가기</h2>
+                    <img src="img/right.png" alt="더 보러가기 화살표버튼">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<footer>
+    <section class="footer">
+        <div class="f_top">
+            <div class="f_info">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">서비스 약관</a></li>
+                    <li><a href="#">제휴제안문의</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <ul class="f_logo">
+                <li><img src="img/footer_logo.png" alt="푸터로고"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer_b">
+        <div class="f_bottom">
+            <h2>Company info</h2>
+            <p>주소 : 제주특별자치도 제주시 검단로 242(우)63309
+                <br>대표 : 조수용  여민수
+                <br>사업자 등록 번호 : 119-81-93985
+                <br>대표 연락처 : 1577-3754
+            </p>
+            <a href="#">@kakao Enterprise. The kakao i is a trademark of kakaocorp.</a>
+        </div>
+    </section>
+</footer>   
+</html>
